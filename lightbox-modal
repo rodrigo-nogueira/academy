@@ -1,0 +1,319 @@
+
+
+<div class="projects-wrap">
+
+            <div class="flex-element development">
+                <a class="lightbox-link" href="#lightbox-project-01">
+                    <img src="images/project-1.jpg" alt="alternative">
+                    <div class="flex-content">
+                        <span class="specs-overlay">Banco</span>
+                    </div>                   
+                </a>              
+            </div>
+
+            <div class="flex-element development">
+                <a class="lightbox-link" href="#lightbox-project-02">
+                    <img src="images/project-2.jpg" alt="alternative">
+                    <div class="flex-content">
+                        <span class="specs-overlay">Transporte</span>
+                    </div>                   
+                </a>
+            </div> 
+
+            <div class="flex-element development">
+                <a class="lightbox-link" href="#lightbox-project-03">
+                    <img src="images/project-3.jpg" alt="alternative">
+                    <div class="flex-content">
+                        <span class="specs-overlay">Construção civil</span>
+                    </div>                   
+                </a>
+            </div> 
+
+            <div class="flex-element development">
+                <a class="lightbox-link" href="#lightbox-project-04">
+                    <img src="images/project-4.jpg" alt="alternative">
+                    <div class="flex-content">
+                        <span class="specs-overlay">Fotografia</span>
+                    </div>                   
+                </a>
+            </div> 
+
+            <div class="flex-element development">
+                <a class="lightbox-link" href="#lightbox-project-05">
+                    <img src="images/project-5.jpg" alt="alternative">
+                    <div class="flex-content">
+                        <span class="specs-overlay">Viagem</span>
+                    </div>                   
+                </a>
+            </div> 
+
+            <div class="flex-element development">
+                <a class="lightbox-link" href="#lightbox-project-06">
+                    <img src="images/project-6.jpg" alt="alternative">
+                    <div class="flex-content">
+                        <span class="specs-overlay">Academia</span>
+                    </div>                   
+                </a>
+            </div>
+
+            <div class="flex-element development">
+                <a class="lightbox-link" href="#lightbox-project-07">
+                    <img src="images/project-7.jpg" alt="alternative">
+                    <div class="flex-content">
+                        <span class="specs-overlay">Restaurante</span>
+                    </div>                   
+                </a>
+            </div> 
+
+            <div class="flex-element development">
+                <a class="lightbox-link" href="#lightbox-project-08">
+                    <img src="images/project-8.jpg" alt="alternative">
+                    <div class="flex-content">
+                        <span class="specs-overlay">Imobiliário</span>
+                    </div>                   
+                </a>
+            </div> 
+
+        </div><!--project wrap-->
+        
+      
+      
+      <style>
+ .flex-element{
+    width: 25%;
+    height: 250px;    
+    position: relative;
+    text-align: center; 
+    overflow: hidden; 
+    border: 2.5px solid white;     
+}
+
+.flex-element:hover img{
+    transform: scale(1.1);
+    transition: ease-in-out .3s;       
+}
+
+.flex-content:hover{
+    background-color: rgba(0,0,0,0.8);
+    opacity: 1;
+    transition: ease-in-out .3s;   
+}
+
+.flex-element img{
+    width: 100%;
+    height: 100%;    
+}
+
+.flex-content {
+    width:100%;
+    height:100%;
+    background:0 0;
+    padding-top:40%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:all .5s ease 0s;
+    opacity: 0;
+}
+
+.flex-content span.specs-overlay{
+    font-size:20px;
+    color:#fff;
+    transform:scale(0);
+    font-family: "Montserrat",sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    background-color:rgba(0,0,0,0.2);
+}
+
+
+
+.box-modal{
+    background-color: white;
+    width: 50%;
+    height: auto;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-left{
+    width: 60%;
+    height: 500px;
+    padding: 15px;
+}
+
+.img-modal{
+    width: 100%;
+    height: 100%;    
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px
+}
+
+
+.col-right{
+    width: 40%;    
+}
+
+.box-modal .col-right .title-modal h3{
+    font-size: 22px;
+    color: #484a46;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 15px;
+}
+
+.box-modal .col-right .title-modal span.line{
+    width: 50px;
+    height: 1px;
+    background-color: #14bf98;
+    display: block;
+    margin-top: 5px;
+}
+
+.box-modal .col-right .title-modal p{
+    font-size: 16px;
+    color: #484a46;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.box-modal .col-right .content-modal{
+    margin-top: 35px;
+}
+
+.box-modal .col-right .content-modal p{
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+
+.link-modal{
+    margin-top: 25px;
+}
+
+.box-modal .col-right a:nth-of-type(1){
+    background-color: #14bf98; 
+    border: 2px solid #14bf98;   
+    height: 45px;
+    width: 130px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 25px; 
+}
+
+.box-modal .col-right a:nth-of-type(1):hover{
+    color: #14bf98;
+    background-color: #ffffff;
+    border: 2px solid #14bf98;
+    transition: all .4s;
+}
+
+.box-modal .col-right a:nth-of-type(2){
+    background-color: #ffffff; 
+    border: 2px solid #484a46;   
+    height: 45px;
+    width: 130px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #484a46;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 5px 
+}
+
+.box-modal .col-right a:nth-of-type(2):hover{
+    color: #ffffff;
+    background-color: #484a46;
+    border: 2px solid #484a46;
+    transition: all .4s;
+}
+
+.box-modal i{
+    color: #14bf98;
+    font-size: 25px;
+    position: absolute;
+    top: 1.5%;
+    right: 1.5%;
+    display: block;
+    cursor: pointer;
+}
+
+.box-modal i:hover{
+    color: #484a46;
+    transition: .5s;
+    
+}
+        </style>
+        
+        
+        
+        
+        <script>
+        
+          $(function(){
+
+    
+function abrirModal(){
+
+    $('.lightbox-link').each(function(){
+    
+        const self = $(this);
+        const targetModal = (self.attr('href'));
+    
+        self.click(function(e){
+            
+            targetModal.fadeIn().css('display', 'flex')
+        });
+    
+    
+    })
+    
+    }
+    
+    abrirModal();
+
+
+    function fecharModal(){
+        const close = $('.close');
+
+        close.click(function(){
+            $('.modal').fadeOut()
+        })
+            }
+
+            fecharModal();
+
+})
+        
+        </script>
